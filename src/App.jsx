@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Home from './pages/Home/Home';
-import Task1 from './pages/tasks/Task1';
-import Task2 from './pages/tasks/Task2';
-import Task3 from './pages/tasks/Task3';
-import Task4 from './pages/tasks/Task4';
-import Task5 from './pages/tasks/Task5';
-import Task6 from './pages/tasks/Task6';
+import Task1 from './pages/tasks/task-01/Task1';
+import Task2 from './pages/tasks/task-02/Task2';
+import Task3 from './pages/tasks/task-03/Task3';
+import Task4 from './pages/tasks/task-04/Task4';
+import Task5 from './pages/tasks/task-05/Task5';
+import Task6 from './pages/tasks/task-06/Task6';
 import './App.css';
 
 function App() {
@@ -15,18 +15,18 @@ function App() {
     switch (currentView) {
       case 'home':
         return <Home onTaskSelect={setCurrentView} />;
-      case 'task1':
-        return <Task1 onBack={() => setCurrentView('home')} />;
-      case 'task2':
-        return <Task2 onBack={() => setCurrentView('home')} />;
-      case 'task3':
-        return <Task3 onBack={() => setCurrentView('home')} />;
-      case 'task4':
-        return <Task4 onBack={() => setCurrentView('home')} />;
-      case 'task5':
-        return <Task5 onBack={() => setCurrentView('home')} />;
-      case 'task6':
-        return <Task6 onBack={() => setCurrentView('home')} />;
+      case 'task-01':
+        return <Task1 />;
+      case 'task-02':
+        return <Task2 />;
+      case 'task-03':
+        return <Task3 />;
+      case 'task-04':
+        return <Task4 />;
+      case 'task-05':
+        return <Task5 />;
+      case 'task-06':
+        return <Task6 />;
       default:
         return <Home onTaskSelect={setCurrentView} />;
     }
@@ -34,13 +34,6 @@ function App() {
 
   return (
     <div className="app">
-      {currentView !== 'home' && (
-        <nav>
-          <button onClick={() => setCurrentView('home')} className="nav-button">
-            ← Назад на головну
-          </button>
-        </nav>
-      )}
       <main>
         {renderView()}
       </main>
