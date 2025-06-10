@@ -1,17 +1,30 @@
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .home {
   min-height: 100vh;
-  background-color: #000;
+  background: linear-gradient(-45deg, #170000, #000000, #170000, #000000);
+  background-size: 400% 400%;
   color: #fff;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
   padding: 0;
   margin: 0;
+  animation: gradientBG 15s ease infinite;
 }
 
-/* Стилі для header тепер в Hero.module.css */
 
 .main {
   padding: 2rem 1rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -23,7 +36,7 @@
 }
 
 .taskCard {
-  background: #111;
+  background: linear-gradient(135deg, #000000 0%, #050505 100%);
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid #222;
@@ -31,6 +44,35 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.taskCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,69,0,0.1) 0%, rgba(0,0,0,0) 70%);
+  opacity: 1;
+  z-index: -1;
+  border-radius: 8px;
+  animation: gradientPulse 6s ease-in-out infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientPulse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .taskCard:hover {
@@ -80,12 +122,12 @@
 
 .taskFooter {
   margin-top: auto;
-  text-align: right;
+  text-align: center;
 }
 
 .taskButton {
   display: inline-block;
-  background: #ff440055;
+  background: #671c0155;
   color: #fff;
   padding: 0.6rem 1.5rem;
   border-radius: 4px;
@@ -95,12 +137,13 @@
   /* border: none; */
   cursor: pointer;
   font-size: 0.95rem;
+  width: 90%;
   
 }
 
 .taskButton:hover {
-  background: #ff5a1f;
-  transform: translateX(-2px);
+  background: #461605;
+  transform: translateY(-1px);
 }
 
 .footer {
