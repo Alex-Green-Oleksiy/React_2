@@ -89,7 +89,7 @@ h2 {
   display: block;
 }
 
-/* Адаптивність */
+
 @media (max-width: 480px) {
   .container {
     margin: 10px;

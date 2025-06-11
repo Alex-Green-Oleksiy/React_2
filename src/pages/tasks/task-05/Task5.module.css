@@ -1,4 +1,3 @@
-/* Основні стилі */
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -12,14 +11,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Список результатів */
 .results {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Окремий результат */
 .result {
   padding: 15px;
   border-radius: 4px;
@@ -32,7 +29,6 @@ h2 {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Заголовок результату */
 .title {
   margin: 0 0 5px 0;
 }
@@ -46,28 +42,24 @@ h2 {
   text-decoration: underline;
 }
 
-/* URL результату */
 .url {
   color: #0d652d;
   font-size: 14px;
   margin-bottom: 5px;
 }
 
-/* Опис результату */
-.snippet {
+  .snippet {
   color: #4d5156;
   margin: 8px 0 0 0;
   line-height: 1.4;
 }
 
-/* Рекламний блок */
 .ad {
   border: 1px solid #e0e0e0;
   background-color: #f8f9fa;
   position: relative;
 }
 
-/* Бейдж реклами */
 .adBadge {
   display: inline-block;
   background-color: #f1f3f4;
@@ -81,7 +73,6 @@ h2 {
   letter-spacing: 0.5px;
 }
 
-/* Заголовок результату */
 .title {
   margin: 0 0 5px 0;
 }
@@ -97,7 +88,6 @@ h2 {
   text-decoration: underline;
 }
 
-/* URL посилання */
 .url {
   color: #006621;
   font-size: 14px;
@@ -105,7 +95,6 @@ h2 {
   word-break: break-all;
 }
 
-/* Текст під результатом */
 .snippet {
   color: #4d5156;
   font-size: 14px;
@@ -113,7 +102,6 @@ h2 {
   line-height: 1.5;
 }
 
-/* Адаптивність */
 @media (max-width: 600px) {
   .container {
     padding: 15px;
@@ -128,7 +116,6 @@ h2 {
   }
 }
 
-/* Search */
 .searchContainer {
   margin: 1.5rem 0;
   max-width: 600px;
@@ -150,7 +137,6 @@ h2 {
   outline: none;
 }
 
-/* Success Message */
 .successMessage {
   background-color: #d4edda;
   color: #155724;
@@ -173,7 +159,6 @@ h2 {
   line-height: 1.5;
 }
 
-/* Footer */
 .footer {
   margin-top: auto;
   padding-top: 2rem;
@@ -182,7 +167,6 @@ h2 {
   justify-content: center;
 }
 
-/* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
@@ -200,7 +184,7 @@ h2 {
   animation: bump 300ms ease-out;
 }
 
-/* Responsive */
+   
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
@@ -227,7 +211,7 @@ h2 {
   }
 }
 
-/* Print styles */
+
 @media print {
   .headerActions,
   .searchContainer,
@@ -249,7 +233,6 @@ h2 {
   line-height: 1.6;
 }
 
-/* Header styles */
 .header {
   display: flex;
   justify-content: space-between;
@@ -271,7 +254,6 @@ h2 {
   gap: 15px;
 }
 
-/* Button styles */
 .button {
   padding: 10px 20px;
   border: none;
@@ -324,7 +306,7 @@ h2 {
   color: white;
 }
 
-/* Search styles */
+
 .searchContainer {
   margin-bottom: 30px;
   max-width: 800px;
@@ -347,7 +329,6 @@ h2 {
   box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.2);
 }
 
-/* Product list styles */
 .productList {
   margin-bottom: 40px;
 }
@@ -366,7 +347,6 @@ h2 {
   margin-top: 20px;
 }
 
-/* Product card styles */
 .productCard {
   background: white;
   border-radius: 10px;
@@ -423,7 +403,6 @@ h2 {
   gap: 10px;
 }
 
-/* Cart styles */
 .cartContainer {
   background: white;
   border-radius: 10px;
@@ -525,7 +504,6 @@ h2 {
   font-weight: 600;
 }
 
-/* Order form styles */
 .orderForm {
   margin-top: 20px;
   padding-top: 20px;
@@ -589,7 +567,6 @@ h2 {
   margin-top: 20px;
 }
 
-/* Empty states */
 .emptyCart,
 .noProducts {
   text-align: center;
@@ -603,7 +580,6 @@ h2 {
   grid-column: 1 / -1;
 }
 
-/* Success message */
 .successMessage {
   background-color: #d4edda;
   color: #155724;
@@ -619,7 +595,6 @@ h2 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Back button */
 .backButton {
   display: inline-flex;
   align-items: center;

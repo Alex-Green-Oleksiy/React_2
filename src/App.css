@@ -16,7 +16,7 @@ body {
   line-height: 1.6;
 }
 
-/* Контейнер */
+
 .app {
   min-height: 100vh;
   display: flex;
@@ -24,7 +24,6 @@ body {
   
 }
 
-/* Кнопка повернення */
 .nav-button {
   background: #4a6bff;
   color: white;
@@ -43,13 +42,10 @@ body {
   background: #3a5bd9;
 }
 
-/* Головний контент */
 main {
   flex: 1;
 
 }
-
-/* Стилі для завдань */
 .task-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -57,7 +53,6 @@ main {
   padding: 1rem;
 }
 
-/* Анімації */
 @keyframes fadeIn {
   from { 
     opacity: 0; 
@@ -73,7 +68,6 @@ main {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Адаптивність */
 @media (max-width: 768px) {
   .app {
     padding: 0.5rem;

@@ -83,7 +83,6 @@ label {
 .services {
   margin-top: 20px;
   padding: 25px;
-  /* background-color: rgba(255, 255, 255, 0.0); */
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   position: relative;
@@ -162,7 +161,6 @@ label {
 }
 
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .options {
         grid-template-columns: 1fr;
