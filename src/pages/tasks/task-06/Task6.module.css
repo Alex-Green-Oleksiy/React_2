@@ -22,8 +22,9 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 4px;
   min-width: 300px;
-  background-color: rgb(255, 252, 251);
+  background-color: rgb(48, 1, 1);
   cursor: pointer;
+  color: #eee;
 }
 
 .select:focus {
@@ -40,15 +41,16 @@ h1 {
 
 .column {
   flex: 1;
-  background: #dcb209;
+  background: #dc09092b;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f9f7f766;
 }
 
 .column h2 {
   margin-top: 0;
-  color: #333;
+  color: #fffcfc;
   font-size: 18px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
@@ -68,7 +70,7 @@ h1 {
 }
 
 .orderItem {
-  background: white;
+  background: rgb(0, 0, 0);
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 10px;
@@ -76,11 +78,12 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border: 1px solid #f8f8f8;
 }
 
 .dishName {
   font-weight: bold;
-  color: #333;
+  color: #efdfdf;
 }
 
 .actionButton {

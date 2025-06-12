@@ -9,6 +9,7 @@
   position: relative;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000a1;
 }
 
 .container::before {
@@ -21,9 +22,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.2;
+  /* opacity: 0.99; */
   z-index: -1;
   border-radius: 5px;
+  
 }
 
 .container.business::before {
@@ -38,21 +40,27 @@ h2 {
   text-align: center;
   margin-top: 0;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #b49a9a;
   font-size: 24px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-h3 {
+.container h3 {
   margin-top: 0;
   margin-bottom: 15px;
-  color: #34495e;
+  color: #000000;
   border-bottom: 2px solid #eee;
+  text-shadow: 1px 1px 2px rgba(247, 244, 244, 0.46);
+
   padding-bottom: 8px;
   font-size: 20px;
 }
 
 .formGroup {
+  color: #040404;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(247, 244, 244, 0.46);
+
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
@@ -62,7 +70,7 @@ h3 {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #2c3e50;
+  color: #000000;
 }
 
 label {
@@ -94,10 +102,14 @@ label {
 .services p {
   margin-top: 0;
   margin-bottom: 20px;
-  color: #555;
+  color: #f3eded;
 }
 
 .optionsGroup {
+  color: #fffefe;
+  /* text-shadow: 0.2px 0.2px 1px rgba(247, 244, 244, 0.9); */
+  
+
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -106,7 +118,7 @@ label {
 .snackOption {
   margin-left: 25px;
   padding-left: 10px;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid #0f1010;
 }
 
 .option {
@@ -121,6 +133,9 @@ label {
 }
 
 .option label {
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(247, 244, 244, 0.46);
+
   margin: 0;
   font-weight: normal;
   cursor: pointer;
@@ -135,9 +150,9 @@ label {
 
 .summary h3 {
   margin-top: 0;
-  color: #495057;
+  color: #060606;
     margin-top: 0;
-    color: #495057;
+    color: #030303;
 }
 
 .summaryList {
